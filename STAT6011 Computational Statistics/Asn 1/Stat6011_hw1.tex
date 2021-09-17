@@ -1,0 +1,208 @@
+\documentclass[notitlepage,a4paper,12pt]{article}%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}%
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{chngpage}
+
+\newcommand{\BF}[1]{{\bf #1:}\hspace{1em}\ignorespaces}
+\newcommand{\cA}{{\cal A}}
+\newcommand{\cB}{{\cal B}}
+\newcommand{\cC}{{\cal C}}
+\newcommand{\cD}{{\cal D}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cR}{{\cal R}}
+\newcommand{\cS}{{\cal S}}
+\newcommand{\cI}{{\cal I}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\cL}{{\cal L}}
+
+\newcommand{\bY}{\mbox{\bf Y}}
+\newcommand{\by}{\mbox{\bf y}}
+\newcommand{\bD}{\mbox{\bf D}}
+\newcommand{\bJ}{\mbox{\bf J}}
+\newcommand{\bF}{\mbox{\bf F}}
+\newcommand{\bM}{\mbox{\bf M}}
+\newcommand{\bR}{\mbox{\bf R}}
+\newcommand{\bZ}{\mbox{\bf Z}}
+\newcommand{\bX}{\mbox{\bf X}}
+\newcommand{\bx}{\mbox{\bf x}}
+\newcommand{\bQ}{\mbox{\bf Q}}
+\newcommand{\bq}{\mbox{\bf q}}
+\newcommand{\bH}{\mbox{\bf H}}
+\newcommand{\bz}{\mbox{\bf z}}
+\newcommand{\ba}{\mbox{\bf a}}
+\newcommand{\be}{\mbox{\bf e}}
+\newcommand{\bG}{\mbox{\bf G}}
+\newcommand{\bB}{\mbox{\bf B}}
+\newcommand{\bA}{\mbox{\bf A}}
+\newcommand{\bP}{\mbox{\bf P}}
+\newcommand{\bC}{\mbox{\bf C}}
+\newcommand{\bI}{\mbox{\bf I}}
+\newcommand{\bO}{\mbox{\bf O}}
+\newcommand{\bU}{\mbox{\bf U}}
+\newcommand{\bu}{\mbox{\bf u}}
+\newcommand{\bc}{\mbox{\bf c}}
+\newcommand{\bd}{\mbox{\bf d}}
+\newcommand{\bs}{\mbox{\bf s}}
+\newcommand{\bS}{\mbox{\bf S}}
+\newcommand{\bt}{\mbox{\bf t}}
+\newcommand{\bT}{\mbox{\bf T}}
+\newcommand{\bV}{\mbox{\bf V}}
+\newcommand{\bv}{\mbox{\bf v}}
+\newcommand{\bW}{\mbox{\bf W}}
+\newcommand{\bg}{\mbox{\bf g}}
+\newcommand{\bp}{\mbox{\bf p}}
+\newcommand{\bb}{\mbox{\bf b}}
+\newcommand{\bm}{\mbox{\bf m}}
+\newcommand{\bw}{\mbox{\bf w}}
+
+\newcommand{\dd}{\mbox{d}}  %derivative
+\newcommand{\dE}{\mbox{E}}  %expectation
+\newcommand{\dT}{\rm T} %vector transpose
+
+\newcommand{\bcU}{\boldsymbol{\cal U}}
+\newcommand{\bcG}{\boldsymbol{\cal G}}
+\newcommand{\bcA}{\boldsymbol{\cal A}}
+\newcommand{\bcW}{\boldsymbol{\cal W}}
+\newcommand{\bca}{\boldsymbol{\cal a}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bdelta}{\boldsymbol{\delta}}
+\newcommand{\bDelta}{\boldsymbol{\Delta}}
+\newcommand{\boldeta}{\boldsymbol{\eta}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bzeta}{\boldsymbol{\zeta}}
+\newcommand{\bGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bLambda}{\boldsymbol{\Lambda}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bvarepsilon}{\boldsymbol{\varepsilon}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bpsi}{\boldsymbol{\psi}}
+\newcommand{\bcSigma}{\boldsymbol{\cal \Sigma}}
+
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\setlength{\textheight}{23cm}
+\setlength{\textwidth}{15cm}
+\setlength{\topmargin}{0cm}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\footskip}{0.5cm}
+
+\begin{document}
+\begin{center}
+\textbf{\underbar{THE UNIVERSITY OF HONG KONG}}\\
+\textbf{\underbar{DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE}}\\
+\par
+\ \\
+\textbf{STAT6011/7611/8305 \ COMPUTATIONAL STATISTICS}\\
+\textbf{(2021 Fall)}\\
+\ \\
+\textbf{Assignment 1, due on October 5}\\
+
+\vspace{0.2in}
+\textbf{All numerical computation MUST be conducted in Python, and attach the
+Python code.}
+\end{center}
+
+\begin{adjustwidth}{3em}{0em}
+{\bf Hints (Useful packages and functions in Python): }
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm, expon, t, binom, gamma
+from scipy.optimize import minimize
+\end{lstlisting}
+\end{adjustwidth}
+
+\begin{enumerate}
+
+\item 
+{\bf Question 1 (Importance Sampling for Rare Event Probability)}
+
+\begin{enumerate} 
+\item For $a=2, 4, 6$, calculate $P(X>a)=\int_a^\infty\phi(x)\mathrm{d} x$, where $X\sim N(0, 1)$. 
+With 100000 samples, use (i) the `Naive' approach (simulate samples from $\phi(x)$, PDF of the standard normal distribution),
+   (ii) the non-ratio version Importance Sampling (simulate samples from the proposal $q(x)=e^{-(x-a)}\mathbf{1}_{[a,\infty)}(x)$),
+    (iii) the ratio version Importance Sampling
+    (simulate samples from the proposal $q(x)=0.5t_4(x)+0.5e^{-(x-a)}\mathbf{1}_{[a,\infty)}(x)$). 
+    %to calculate the point estimates and the confidence intervals.
+
+\item Calculate the optimal proposals of both non-ratio or ratio version Importance Sampling. Compare the proposals in (a) with the corresponding optimal proposals by plots.
+
+\item For the non-ratio version Importance Sampling, we find that the previous proposal 
+is too flat compared to the optimal proposal. To improve the performance of Importance Sampling, we assume the proposal family to be $q(x|b)=be^{-b(x-a)}\mathbf{1}_{[a,\infty)}(x)$. To find the best parameter $b$, note that the asymptotic variance can be estimated by
+\begin{align*}
+\sigma^2(b)&=\mathbb{E}_b[(w_b(X)f(X)-\mu)^2]\\
+&=\int\frac{(\phi(x)\mathbf{1}_{[a,\infty)}(x)-\mu q(x|b))^2}{q(x|b)}\mathrm{d}x=\int\frac{(\phi(x)\mathbf{1}_{[a,\infty)}(x))^2}{q(x|b)}\mathrm{d}x-\mu^2\\
+&\approx\hat{S}(b|b_0)-\mu^2=\frac{1}{n}\sum_{i=1}^n\frac{(\phi(x_i)\mathbf{1}_{[a,\infty)}(x_i))^2}{q(x_i|b)q(x_i|b_0)}-\mu^2, 
+\end{align*}
+where $x_i\sim q(x|b_0), i=1,\dots,n.$
+So, instead of minimizing $\sigma^2(b)$ with respect to $b$, we can minimize $\hat{S}(b|b_0)$ for a given $b_0$. Furthermore, we can 
+iterate the optimization procedure by replacing $b_0$ by the optimal $b$
+in the previous step, which lead to the Adaptive Importance Sampling (AIS) methodology. 
+When $a=6$, $b_0=1$ and $n=100$, build the AIS algorithm with 10 iterations to find the optimal $b$,
+ plot the log value of the  asymptotic variance $\sigma^2(b)$ (estimated with 10000 new samples $x_i$) 
+at the initial $b_0$ and the optimal $b$ at each iteration step.
+
+\item 
+%In many cases, instead of simple $P(X>a)$, we are more interested in estimating $P(h(X)>a)$ for a function $h(x)$ and a large $a$, which can be really complicated especially when it is a multidimensional problem. For illustration, we return to the original problem of the estimation for $P(X>a)$, $X\sim N(0, 1)$, but this time  
+Now, we consider the gamma family $q(x|b,c)=b^2(x-c)e^{-b(x-c)}\mathbf{1}_{[c,\infty)}(x)$ as the 
+proposal and obtain the optimal values for $b$ and $c$. So, consider
+$$
+\hat{S}(b,c|b_0,c_0)=\frac{1}{n}\sum_{i=1}^n\frac{(\phi(x_i)\mathbf{1}_{[a^*,\infty)}(x_i))^2}{q(x_i|b,c)q(x_i|b_0,c_0)}, 
+$$
+where $x_i\sim q(x|b_0,c_0), i=1,\dots,n$; $a^*=\min(a, x_{(1-\varepsilon)})$, $x_{(1-\varepsilon)}$ is the $(1-\varepsilon)$-quantile of $\{x_i\}$. When $a=6$, $b_0=1$, $c_0=0$, $n=100$ and $\varepsilon=0.1$, build an AIS algorithm with $\hat{S}(b,c|b_0,c_0)$ and 20 iterations to find the optimal $b$ and $c$, plot
+the log value of the asymptotic variance (estimated with 2000000 new samples) at the initial
+$b_0,c_0$ and optimal parameters $b,c$ at each iteration step. 
+%When does this algorithm converge? The spirit behind this algorithm actually coincide with that of the Generative Adversarial Networks, think about why (no need to answer this).
+
+
+\end{enumerate}
+
+\item
+\textbf{Question 2 (Modified Rejection Sampling)}
+
+
+To draw samples from the target distribution $\pi(x)$, remember the procedure of Rejection Sampling (RS): 1) Draw initial samples $\{x_1,\dots,x_m\}$ from an envelope distribution $q(x)$, and calculate the corresponding ratios or weights $\{w_1,...,w_m\},w_j=w(x_j)=\pi(x_j)/q(x_j)$; 2) Calculate $C=\sup w(x)$, and accept each sample $x_j$ with the probability $p_j=w_j/C$ to obtain the final samples $\{x_1^*,\dots,x_n^*\}$. A modified version of RS is to replace $C$ by $\max w_j$.
+%We will assume $m$ to be fixed and $n$ to be random, and check the difference between these two methods numerically.
+
+\begin{enumerate}
+\item Obviously the first benefit of replacing $\sup w(x)$ by $\max w_j$ is that it saves efforts to calculate the maximum value especially when the shape of the target or proposal are complicated or non-smooth. Let 
+    $\pi(x)=0.5N(x|-2,0.5^2)+0.5N(x|1,1^2)$ be the target and $q(x)=t_1(x)$ be the envelope.
+    Plot $w(x)$ and calculate $C$.
+
+\item The acceptance rate for the original RS is $1/C$. As $\max w_j<C$, the modified RS may have higher acceptance rate. Set $m=50, 100, 200, 500, 1000$. Under each $m$, implement these two types of Rejection Sampling 
+    with $1000$ replications to estimate and compare their acceptance rates by plotting the acceptance rate vs $\log(m)$.
+     %and calculate the probability that the modified version has more final samples. Display your results with plots or tables.
+
+\item The third advantage is that different from $\sup w(x)$, $\max w_j$ can always be obtained even if the tail of $q(x)$ is lighter than that of $\pi(x)$.
+Let $\pi(x)=N(x|0,1^2)$, $q(x)=N(x|0,0.8^2)$. Generate over 3000 final samples using the modified version of RS, and plot
+the histogram vs the true target $\pi(x)$.
+    %how little $\sigma$ can be so that we can still obtain reasonable final samples (at least for very big $m$) in the sense that its histogram still looks like the target distribution? Use mathematics or simulations to justify your guess, rigorously or intuitively.
+
+\item 
+The modified RS procedure is actually a biased method (but asymptotically unbiased), which means that the final samples do not follow the target distribution. Set $m=5$, $\pi(x)=N(x|0,1^2)$, $q(x)=N(x|0,3^2)$. Run $K=20000$ repetitions for both the RS and the modified RS, for the $k$th repetition, obtain a group of final samples $\{x_{k,1}^*,\dots,x_{k,n_k}^*\}$ and assign weights $1/n_k$ for each sample in this group (there would be no sample to set the weights if $n_k=0$), finally pool the samples in the $K$ groups to obtain 
+the weighted samples $\{(x_{1,1}^*,1/n_1),\dots,(x_{k,i}^*,1/n_k),\dots,(x_{K,n_K}^*,1/n_K)\}$. 
+Plot the two histograms of the pooled weighted samples corresponding to the RS and the modified RS and compare them with $\pi(x)$.
+%whose histogram with little bin width can be viewed as the expectation of the distribution of the final samples (conditional on that the final sample set is not empty). Compare the two obtained histograms in a single plot, where you should also draw the target density as a reference curve.
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document} 
