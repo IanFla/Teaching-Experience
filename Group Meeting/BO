@@ -1,1 +1,72 @@
-<mxfile host="app.diagrams.net" modified="2021-10-27T15:42:05.805Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="ZlbtHbN53jgMUClQLHn9" version="15.5.9" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7Vpbd5s4EP41Pqf7YI5AGMxj7Vy6u9k2TdLN5lEGGbMViAoR2/31K4G4yBBibxMnzWkecqTRDc3M981ojkdwHm/OGUpXf9EAk5EFgs0Inowsy7Md8V8KtqXAMe1SELIoKEVmI7iOvmMlBEqaRwHOtImcUsKjVBf6NEmwzzUZYoyu9WlLSvRTUxTijuDaR6QrvY0CviqlU8tt5B9wFK6qk03HK0diVE1WN8lWKKDrlgiejuCcUcrLVryZYyJ1V+nl9vftLbn46pz/8Tn7hr7M/rz5+Pe43OzskCX1FRhO+P/eGvKpOV9nV2Ewzq6urDMPu3QMYbn3PSK5Upi6LN9WGsSBUKjqUsZXNKQJIqeNdMZongRYngNEr5lzQWkqhKYQ/os53yrvQDmnQrTiMVGje15QKSKjOfPxwDzlshyxEPOh26vLyhu2vEXp7xzTGHO2FRMYJohH97pLIeWZYT2v0b5oKAMcYoxJxxgfaa85LtBCoFRTISJRmIi2L1SImRDcY8YjgYP3aiCOgqC0Fs6i72hR7CftldIo4cVdJrPR5ERIljThlcV7nG/Yk8SxeNMHbXWkhh5Ny2rVGBjAchQ+FesoQ+1tB7X5pbxaawpdLjPhEbuGqr/hB2znvQRuhEnY9h+53phU3bv22MlGbV72tqr3QngzXxXcbLMDtzsRqX4WvHlPhTdg2KZtaXAbw1eEtyGX0+KWQ4TCZgvRCGVDfohoo1hgaVYMCcHNCJ5VM8XB9eSO2dmKxotc3GO2XkUcX6eogMBaJEm6I9RpAVCWPENxRKQiP2Byj6VPVCYuYWxafe6TcUa/1ilKsbE4MkpC0XOa3k3BDGNbbhkRMqeEsuKD4XKJHd+vd2qNBK63AIfDvuNZD3qQBSwDeqD5MzVvglOVQa2bBMyFhqvC3aqVftngucAOX4SfNxFv0bPo3bVGGnKWnYqbH+L0hsWPwulul9OHgHh8Th/66iFa+JIGiGN5tZX8f34ptUYzgcJIAMYCNJHPjMJbhbNa4N2m2iLL29xSc0hLPLLmhdvvveA3Yz8yqh3RfJyQdqkmJCjLlJP0sIxGXzqlBAhPl72U4vhTvFg+I6WYDjQ8nUWsLouYE2C48Jg0Ajq2OWaaZ2qE0PDDk1PCUPr2aJpnPzUlFEvfM4a2rQkqjeomH8qDYBVftpVHgR3zlzs+6TOgm1L2pyVyCJQJisxKzGdggVcDZWhPDBNqtqgB2sKyMo+GY/hcOO6LEz9T2WMId4/i88VC9tBXD0Fmjoifk3bURv63PMoiHpXROk981czfbYqYWmb9ySJLCz3/irG9MXZi7HBkDy5N2zWOmalXheO3hc19SyTeq8LmHq/sC1zG3ANyZLAoIFxvxaqhGG2iWBikSMOXLTS/2dhouq4BpnpsBD0YtGwDukcEIXyTAdLrgnDoFflKQOj1mGIHhJ8WGWb3eODt+VA8bAOzSEqXh7x33zg4p7Z4XbbKWnqRtM5Y20AFngGOCtS+F8dPD9TqEsd/av6QMarPHoJqDa4UJZXskkgwFCFR1aO0WpQIgm34tRb2bWY8MncQqSJTTWVTWBIRggkNGYp1U3fT2xSzSChQlrH1hZfNQC/qdV5AzG+n1FnZBoYFe1hhgqeB3ccKU2sBHec5WQFODM/WmKCnvm0Bx3CsYxLBHr73Kedpfni6pgqh5cuLSEhm/OBIUZZGpVfvZn270ak8p5MLluJ2pTbGKNkvAP1y68fdGkyNqdf+01zc7gl2IgA+VfVVdJsf0pTFuObXSPD0Pw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-28T02:38:29.374Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="ULe9Jm2H7IrxBmzsPF0D" version="15.6.0" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="3t81CwsRgd-sRR2F9e7o-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-35" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="3t81CwsRgd-sRR2F9e7o-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="3t81CwsRgd-sRR2F9e7o-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-41" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="3t81CwsRgd-sRR2F9e7o-39" vertex="1" connectable="0">
+          <mxGeometry x="0.4142" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="&lt;b&gt;t &amp;lt; T?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="202.39000000000001" y="380" width="73.75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="&lt;b&gt;Update the GP posterior on f with (x&lt;sub&gt;t&lt;/sub&gt;, y&lt;sub&gt;t&lt;/sub&gt;).&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="163.9" y="320" width="150.73" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-1" target="3t81CwsRgd-sRR2F9e7o-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-1" value="&lt;b&gt;t = t + 1&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="345.13" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-4" target="3t81CwsRgd-sRR2F9e7o-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-4" value="&lt;b&gt;Calculate the acquisition function u&lt;sub&gt;t&lt;/sub&gt;(x).&amp;nbsp;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="165.5" y="140" width="147.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-6" target="3t81CwsRgd-sRR2F9e7o-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-6" value="&lt;b&gt;Let x&lt;sub&gt;t&lt;/sub&gt; be a&lt;br&gt;maximizer of u&lt;sub&gt;t&lt;/sub&gt;(x).&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="177.08" y="200" width="124.37" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-9" target="WIyWlLk6GJQsqaUBKTNV-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-9" value="&lt;b&gt;Observe y&lt;sub&gt;t&amp;nbsp;&lt;/sub&gt;= f(x&lt;sub&gt;t&lt;/sub&gt;).&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="184.73000000000002" y="260" width="109.07" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-22" target="3t81CwsRgd-sRR2F9e7o-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-22" value="&lt;b&gt;&lt;span&gt;Place a GP prior on f(x)&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;/b&gt;" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="135.94" y="80" width="206.62" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-32" value="&lt;b&gt;Output x&lt;sub&gt;t&lt;/sub&gt; with the largest f(x&lt;sub&gt;t&lt;/sub&gt;), or&lt;br&gt;&amp;nbsp;the maximizer of the posterior mean.&lt;/b&gt;" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="108.89999999999999" y="460" width="260.73" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
