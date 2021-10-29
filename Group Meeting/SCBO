@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T03:31:45.021Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="gJqLL9brmt7z8vqcJcNn" version="15.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-29T02:24:08.997Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="ijjYT5V6gR_usPaAllAp" version="15.6.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -15,7 +15,7 @@
         <mxCell id="d1JtPeNQZyS1j6KW5SPR-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="3t81CwsRgd-sRR2F9e7o-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9Xk5QFvB18tD_P4I8CxE-0" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" vertex="1" connectable="0" parent="d1JtPeNQZyS1j6KW5SPR-4">
+        <mxCell id="9Xk5QFvB18tD_P4I8CxE-0" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1" parent="d1JtPeNQZyS1j6KW5SPR-4" vertex="1" connectable="0">
           <mxGeometry x="0.3636" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -61,7 +61,7 @@
         <mxCell id="3t81CwsRgd-sRR2F9e7o-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3t81CwsRgd-sRR2F9e7o-22" target="3t81CwsRgd-sRR2F9e7o-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3t81CwsRgd-sRR2F9e7o-22" value="&lt;b&gt;Place GP priors on &lt;br&gt;f(x); Set z&lt;sub&gt;0&lt;/sub&gt;&lt;br&gt;&lt;/b&gt;" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="3t81CwsRgd-sRR2F9e7o-22" value="&lt;b&gt;Place GP priors on &lt;br&gt;f(x); Set z&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;&lt;b&gt;.&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="151.93" y="80" width="174.64" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3t81CwsRgd-sRR2F9e7o-32" value="&lt;b&gt;Output x&lt;sub&gt;t&lt;/sub&gt; with the largest f(x&lt;sub&gt;t&lt;/sub&gt;), or&lt;br&gt;&amp;nbsp;the maximizer of the posterior mean.&lt;/b&gt;" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
