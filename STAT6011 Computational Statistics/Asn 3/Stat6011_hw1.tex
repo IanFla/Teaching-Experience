@@ -1,0 +1,153 @@
+\documentclass[notitlepage,a4paper,12pt]{article}%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}%
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{chngpage}
+
+\newcommand{\BF}[1]{{\bf #1:}\hspace{1em}\ignorespaces}
+\newcommand{\cA}{{\cal A}}
+\newcommand{\cB}{{\cal B}}
+\newcommand{\cC}{{\cal C}}
+\newcommand{\cD}{{\cal D}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cR}{{\cal R}}
+\newcommand{\cS}{{\cal S}}
+\newcommand{\cI}{{\cal I}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\cL}{{\cal L}}
+
+\newcommand{\bY}{\mbox{\bf Y}}
+\newcommand{\by}{\mbox{\bf y}}
+\newcommand{\bD}{\mbox{\bf D}}
+\newcommand{\bJ}{\mbox{\bf J}}
+\newcommand{\bF}{\mbox{\bf F}}
+\newcommand{\bM}{\mbox{\bf M}}
+\newcommand{\bR}{\mbox{\bf R}}
+\newcommand{\bZ}{\mbox{\bf Z}}
+\newcommand{\bX}{\mbox{\bf X}}
+\newcommand{\bx}{\mbox{\bf x}}
+\newcommand{\bQ}{\mbox{\bf Q}}
+\newcommand{\bq}{\mbox{\bf q}}
+\newcommand{\bH}{\mbox{\bf H}}
+\newcommand{\bz}{\mbox{\bf z}}
+\newcommand{\ba}{\mbox{\bf a}}
+\newcommand{\be}{\mbox{\bf e}}
+\newcommand{\bG}{\mbox{\bf G}}
+\newcommand{\bB}{\mbox{\bf B}}
+\newcommand{\bA}{\mbox{\bf A}}
+\newcommand{\bP}{\mbox{\bf P}}
+\newcommand{\bC}{\mbox{\bf C}}
+\newcommand{\bI}{\mbox{\bf I}}
+\newcommand{\bO}{\mbox{\bf O}}
+\newcommand{\bU}{\mbox{\bf U}}
+\newcommand{\bu}{\mbox{\bf u}}
+\newcommand{\bc}{\mbox{\bf c}}
+\newcommand{\bd}{\mbox{\bf d}}
+\newcommand{\bs}{\mbox{\bf s}}
+\newcommand{\bS}{\mbox{\bf S}}
+\newcommand{\bt}{\mbox{\bf t}}
+\newcommand{\bT}{\mbox{\bf T}}
+\newcommand{\bV}{\mbox{\bf V}}
+\newcommand{\bv}{\mbox{\bf v}}
+\newcommand{\bW}{\mbox{\bf W}}
+\newcommand{\bg}{\mbox{\bf g}}
+\newcommand{\bp}{\mbox{\bf p}}
+\newcommand{\bb}{\mbox{\bf b}}
+\newcommand{\bm}{\mbox{\bf m}}
+\newcommand{\bw}{\mbox{\bf w}}
+
+\newcommand{\dd}{\mbox{d}}  %derivative
+\newcommand{\dE}{\mbox{E}}  %expectation
+\newcommand{\dT}{\rm T} %vector transpose
+
+\newcommand{\bcU}{\boldsymbol{\cal U}}
+\newcommand{\bcG}{\boldsymbol{\cal G}}
+\newcommand{\bcA}{\boldsymbol{\cal A}}
+\newcommand{\bcW}{\boldsymbol{\cal W}}
+\newcommand{\bca}{\boldsymbol{\cal a}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bdelta}{\boldsymbol{\delta}}
+\newcommand{\bDelta}{\boldsymbol{\Delta}}
+\newcommand{\boldeta}{\boldsymbol{\eta}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bzeta}{\boldsymbol{\zeta}}
+\newcommand{\bGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bLambda}{\boldsymbol{\Lambda}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bvarepsilon}{\boldsymbol{\varepsilon}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bpsi}{\boldsymbol{\psi}}
+\newcommand{\bcSigma}{\boldsymbol{\cal \Sigma}}
+
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\setlength{\textheight}{23cm}
+\setlength{\textwidth}{15cm}
+\setlength{\topmargin}{0cm}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\footskip}{0.5cm}
+
+\begin{document}
+\begin{center}
+\textbf{\underbar{THE UNIVERSITY OF HONG KONG}}\\
+\textbf{\underbar{DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE}}\\
+\par
+\ \\
+\textbf{STAT6011/7611/8305 \ COMPUTATIONAL STATISTICS}\\
+\textbf{(2021 Fall)}\\
+\ \\
+\textbf{Assignment 1, due on October 5}\\
+
+\vspace{0.2in}
+\textbf{All numerical computation MUST be conducted in Python, and attach the
+Python code.}
+\end{center}
+
+\begin{enumerate}
+
+\item 
+{\bf Question 2 (Metropolis-Hasting algorithm)}
+
+\begin{enumerate} 
+\item Assume $\mathbf{X}=(X_1,\dots,X_{10})$ follows a multivariate standard normal distribution $\pi(\mathbf{x})$. Build a Random Walk algorithm with the Gaussian kernel to estimate $E[D]$, where $D=f(\mathbf{X})=\sqrt{\sum_{j=1}^{10}X_j^2}$. Firstly, tune the step size such that you have roughly 23.4\% acceptance rate. What step size do you choose? Then, draw 10000 samples to do the estimation, set the initial point $\mathbf{x}_0=\mathbf{0}$, set the burn-in parameter to be 1000 and set the thinning parameter to be 5. 
+
+\item A simple techique called batching can help us to build a confidence interval with MCMC samples. We divide the above obtained 10000 samples $\{d_1,\dots,d_{10000}\}$ into 20 batches, where $d_i=f(\mathbf{x}_i)$, and $\textbf{x}_i=(x_{i1},\dots,x_{i10})$ is a sample in the MCMC sequence. Do the estimation in each batch:
+$$
+\overline{d}_b=\frac{1}{500}\sum_{i=500(b-1)+1}^{500b}d_i,
+$$
+for $b=1,\dots,20$. Estimate that
+$$
+s^2=\frac{1}{20(20-1)}\sum_{b=1}^{20}(\overline{d}_b-\overline{d})^2. 
+$$
+So, the 95\% confidence interval would be
+$$
+\overline{d}\pm t_{(19)}^{0.975}s. 
+$$
+Please give this interval. 
+
+\item In the self-normalized IS, the optimal proposal is propotional to $\pi(\mathbf{x})|f(\mathbf{x})-E[D]|$. Replace $E[D]$ by the estimate $\hat{E}[D]$ obtained in (a), draw samples from the optimal proposal based on the Random Walk, and weight each obtained sample by the weighting function 
+$$
+w(\mathbf{x})=\frac{1}{|f(\mathbf{x})-\hat{E}[D]|}. 
+$$
+Follow a similar procedure of (a) and (b) to calculate the estimate of $E[D]$ and the 95\% confidence interval by the self-normalized IS. Does your confidence interval become wider or narrower? (hints: (1) Remember to ensure the 23.4\% acceptance rate; (2) You don't need to consider the weights of the averages for each batch in this question. )
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document} 
